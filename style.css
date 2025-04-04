@@ -23,7 +23,7 @@ body {
 .container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     position:fixed;
@@ -107,6 +107,5 @@ button:hover {
 .popup-image img {
     max-width: 80%;
     max-height: 80vh;
-    border: 5px solid yellow;
     border-radius: 10px;
 }
