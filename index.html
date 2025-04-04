@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .message {
+            font-size: 24px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 540px;
+        }
+        .popup-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 1px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <video class="video-background" autoplay muted loop>
+        <source src="back.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>        
+
+    <button id="press-button">PRESS</button>
+
+    <div id="valentine-container" class="hidden container">
+        <div id="valentine-message" class="message">Happy Birthday to both of you, Johnlloyd and Princess—may your special day be filled with love, laughter, and unforgettable memories!
+        </div>
+        <div class="popup-image">
+            <img id="flower-img" src="cake.png", width="350" height="300" alt="Surprise Image">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const pressButton = document.getElementById('press-button');
+            const valentineContainer = document.getElementById('valentine-container');
+
+            pressButton.addEventListener('click', () => {
+                valentineContainer.classList.remove('hidden'); 
+            });
+        });
+    </script>
+
+</body>
+</html>
